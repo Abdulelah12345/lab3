@@ -21,9 +21,9 @@ public class Book extends Media{
         this.stock = stock;
     }
 
-    public Review getReview() {
+    public ArrayList<Review> getReview() {
 
-        return review.get(0);
+        return review;
     }
 
     public void addReview(Review review) {
