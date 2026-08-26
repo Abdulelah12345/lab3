@@ -14,7 +14,7 @@ public class Main {
 
         ArrayList<Review> reviews = new ArrayList<>();
 
-reviews.add(new Review("Abdulelah",4,"great book"));
+        reviews.add(new Review("Abdulelah",4,"great book"));
         reviews.add(new Review("Mohammed",2.5,"not bad"));
         Novel novel1 = new Novel("Harry Potter", "J.K. Rowling", "B-301", 55.0, 10, reviews, "Fantasy");
 
@@ -44,5 +44,9 @@ reviews.add(new Review("Abdulelah",4,"great book"));
 
         System.out.println("All items in Store:");
         myStore.displayMedias();
+        System.out.println("====================");
+    Book findBook= myStore.searchBook("Harry Potter");
+        System.out.println(findBook);
+
     }
 }
