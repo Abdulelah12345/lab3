@@ -47,24 +47,22 @@ user.add(u);
         System.out.println(m.getTitle()+" added ");
 
     }
+    
     public void displayMedias(){
         for (int i = 0; i < media.size(); i++) {
             System.out.println(media.get(i));
 
         }
     }
-//   public Book searchBook(String title){
-//       for (int i = 0; i < media.size(); i++) {
-//
-//           if(media.get(i) instanceof Book){
-//               Book b=
-//
-//
-//           }
-//
-//       }
-//
-//   }
+   public Book searchBook(String title){
+   for(Media m: media){
+       if(m instanceof Book){
+           Book b =(Book)m;
+       if(b.getTitle().equalsIgnoreCase(title));
+       }
+   }
+return null;
+   }
 
 
 }
